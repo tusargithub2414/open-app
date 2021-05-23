@@ -1,0 +1,57 @@
+<div class="banner-form mb-2">
+  <div class="contact-form">
+    <form id="contact-form" action="assets/contact.php" method="post" data-toggle="validator">
+    <div class="row">
+
+    <div class="col-md-12 custome-slider mb-3">
+      <label class="d-block">Monthly Income</label>
+      <div class="range-value">₹ {{monthlyIncome}}</div>
+      <ngx-slider [(value)]="monthlyIncome" [options]="monthlyIncomeSliderOptions"></ngx-slider>
+      <div class="range-min-max">  <span> ₹ 1,00,000</span> <span class="float-right">₹ 3,00,000</span></div>
+      </div>
+      <div class="col-md-12 custome-slider mb-3">
+        <label class="d-block">Monthly Expense</label>
+        <div class="range-value">₹ {{monthlyExpences}}</div>
+        <ngx-slider [(value)]="monthlyExpences" [options]="monthlyExpencesSliderOptions"></ngx-slider>
+        <!-- <div class="range-min-max">  <span> ₹ 1,00,000</span> <span class="float-right">₹ 3,00,000</span></div> -->
+        </div>
+    <div class="col-md-12 custome-slider">
+      <label class="d-block">Repayment Tenure</label>
+    <div class="single-form form-group">
+      <select class="form-control"  value="6month">
+        <option value="3month">3 Month</option>
+        <option value="6month">6 Month</option>
+        <option value="1year">1 Year</option>
+      </select>
+    </div>
+    </div>
+    <div class="col-md-12 custome-slider mb-3">
+    <div class="custom-control custom-switch " >
+
+      <input type="checkbox" class="custom-control-input" id="switch1" name="example" (click)="toggle()">
+      <label class="custom-control-label" for="switch1"> Do you have any existing loans?</label>
+    </div>
+</div>
+<div class="col-md-12 custome-slider" *ngIf="isEmiExist">
+  <label class="d-block">Emi of Existing Loan(Optional)</label>
+<div class="single-form form-group">
+<input type="number" class="form-control" placeholder="₹ 15,000">
+</div>
+</div>
+
+
+    </div>
+
+    </form>
+    </div>
+
+    <div class="range-data custome-slider">
+      <label class="mb-0">Loan Amount</label>
+      <div class="range-value mb-3">₹ 1,00,000</div>
+      <label class="mb-0">Your EMI will be</label>
+      <div class="range-value mb-3">₹ 15,000</div>
+              <button type="submit" class="main-btn main-btn-2">Get Money</button>
+
+
+          </div>
+  </div>

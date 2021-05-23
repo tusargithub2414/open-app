@@ -1,1 +1,523 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body,html {
+  background-color: #FCFCFF;
+  color: #222222;
+  font-family: 'Montserrat', sans-serif !important;
+}
+img{
+  max-width: 100%;
+}
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+i,
+span,
+a {
+  display: inline-block;
+}
+
+
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
+.bg_cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.main-btn {
+
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #663399;
+    border-radius: 20px;
+    padding: 0 16px;
+    font-size: 14px;
+    height: 35px;
+    min-width: 80px;
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 5;
+    transition: all 0.4s ease-out 0s;
+    background-color: #663399;
+    box-shadow: 0 5px 16px 0 rgb(109 48 165 / 65%);
+}
+
+.main-btn i {
+  margin-right: 5px;
+}
+
+.main-btn:hover {
+  background-color: #fff;
+  color: #663399;
+  border-color: #663399;
+}
+
+.main-btn.main-btn-2 {
+  background-color: #fff;
+  color: #663399;
+  border-color: #663399;
+}
+
+.main-btn.main-btn-2:hover {
+  background-color: #663399;
+  border-color: #663399;
+  color: #fff;
+}
+
+.section-title .sub-title {
+  font-size: 18px;
+  color: #663399;
+  text-transform: uppercase;
+}
+.banner-form{
+  /* position: absolute; */
+    width: 350px;
+    /* right: 30px; */
+    background-color: #ffffff;
+    padding: 14px 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px #2321321F;
+}
+
+
+@media (max-width: 767px) {
+  .section-title .sub-title {
+    font-size: 16px;
+  }
+}
+
+.section-title .title {
+  font-size: 35px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .section-title .title {
+    font-size: 24px;
+  }
+}
+
+.animation-one {
+  -webkit-animation: rotate 15s linear infinite;
+  -moz-animation: rotate 15s linear infinite;
+  -o-animation: rotate 15s linear infinite;
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.header-area {
+  position: relative;
+  overflow: hidden;
+}
+
+.header-area .shape {
+  position: absolute;
+}
+
+.header-area .header-shape-one {
+  top: 90px;
+  left: -130px;
+  width: 500px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-area .header-shape-one {
+    width: 230px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-area .header-shape-one {
+    width: 180px;
+  }
+}
+
+.header-area .header-shape-two {
+    top: -250px;
+    right: -70px;
+    width: 850px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-area .header-shape-two {
+    left: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-area .header-shape-two {
+    left: 60%;
+    width: 60px;
+  }
+}
+
+.header-area .header-shape-three {
+  left: 390px;
+  bottom: 110px;
+  z-index: 9;
+  width: 350px;
+
+}
+
+@media (max-width: 767px) {
+  .header-area .header-shape-three {
+    width: 90px;
+    bottom: 200px;
+  }
+}
+
+.header-area .header-shape-foure {
+  right: 15px;
+  bottom: 0;
+  width: 350px;
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header-area .header-shape-foure {
+    width: 260px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-area .header-shape-foure {
+    bottom: -60px;
+    width: 210px;
+  }
+}
+
+.navigation-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  padding: 5px 0;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+.navigation-bar.sticky {
+  position: fixed;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 21px 0 rgba(254, 119, 101, 0.2);
+  -moz-box-shadow: 0 5px 21px 0 rgba(254, 119, 101, 0.2);
+  box-shadow: 0 5px 21px 0 rgba(254, 119, 101, 0.2);
+  z-index: 99;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navigation-bar.sticky .navbar-btn {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 767px) {
+  .navigation-bar.sticky .navbar-btn {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+.navbar {
+  padding: 0;
+  position: relative;
+}
+
+.navbar .navbar-brand img {
+  max-width: 120px;
+}
+
+.navbar .navbar-toggler .toggler-icon {
+  width: 30px;
+  height: 2px;
+  display: block;
+  background-color: #646464;
+  margin: 5px 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar .navbar-collapse {
+    position: absolute;
+    top: 128%;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 5px 15px;
+    z-index: 9;
+    -webkit-box-shadow: 0 5px 25px 0 rgba(244, 128, 74, 0.3);
+    -moz-box-shadow: 0 5px 25px 0 rgba(244, 128, 74, 0.3);
+    box-shadow: 0 5px 25px 0 rgba(244, 128, 74, 0.3);
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-collapse {
+    position: absolute;
+    top: 128%;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 5px 15px;
+    z-index: 9;
+    -webkit-box-shadow: 0 5px 25px 0 rgba(244, 128, 74, 0.3);
+    -moz-box-shadow: 0 5px 25px 0 rgba(244, 128, 74, 0.3);
+    box-shadow: 0 5px 25px 0 rgba(244, 128, 74, 0.3);
+  }
+}
+
+.navbar .navbar-nav .nav-item {
+  margin-right: 30px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .navbar .navbar-nav .nav-item {
+    margin-right: 25px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar .navbar-nav .nav-item {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-nav .nav-item {
+    margin: 5px 0;
+  }
+}
+
+.navbar .navbar-nav .nav-item a {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .navbar .navbar-nav .nav-item a {
+    font-size: 13px;
+  }
+}
+
+.navbar .navbar-nav .nav-item.active a,
+.navbar .navbar-nav .nav-item:hover a {
+  color: #663399;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar .navbar-btn {
+    position: absolute;
+    right: 70px;
+    top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-btn {
+    position: absolute;
+    right: 70px;
+    top: 0;
+  }
+}
+
+.header-banner {
+  height: 650px;
+  position: relative;
+}
+.header-banner .pt-space{
+  padding-top: 150px;
+}
+
+.header-banner .sideImage{
+  margin-top: 50px;
+    position: absolute;
+}
+.header-banner .sideImage img{
+  max-width: 400px;
+}
+
+@media (max-width: 767px) {
+  .header-banner .banner-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.header-banner .banner-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+}
+
+.header-banner .banner-content {
+  position: relative;
+  z-index: 9;
+  width: 407px;
+  height: 98px;
+}
+
+.header-banner .banner-content .content {
+  font-size: 40px;
+  color: #222222;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+.header-banner .banner-content .content-border{
+width: 236px;
+height: 8px;
+background: #000000 0% 0% no-repeat padding-box;
+border-radius: 13px;
+opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+  .header-banner .banner-content .sub-title {
+    font-size: 18px;
+  }
+}
+
+.header-banner .banner-content .banner-title {
+  font-size: 60px;
+}
+
+.header-banner .banner-content .banner-title span {
+  color: #663399;
+}
+
+@media (max-width: 767px) {
+  .header-banner .banner-content .banner-title {
+    font-size: 38px;
+  }
+}
+
+.header-banner .banner-content .banner-contact {
+  position: relative;
+  font-size: 15px;
+  font-weight: 600;
+  color: #663399;
+  text-transform: uppercase;
+  margin-left: 70px;
+}
+
+.header-banner .banner-content .banner-contact::befoure {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: #663399;
+  left: -70px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+/* About Section css */
+
+.about-section{
+background-image: url(../src/assets/image/sol_wave_bg.svg);
+background-size: cover;
+height: 600px;
+background-repeat: no-repeat;
+}
+.mt-100{
+  margin-top: 100px;
+}
+.openBankCard{
+  width: 320px;
+  box-shadow: 0px 0px 30px #2321321F;
+  border: 1px solid #FFFFFF !important;
+  border-radius: 20px !important;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+
+}
+.openBankCard:hover{
+background-color: #663399b5;
+color: #fff;
+}
+.openBankCard:hover .card-title{
+  color:#fff;
+}
+
+.openBankCard .card-title{
+  font-size: 15px !important;
+  color: #333333;
+  margin-top: 15px;
+}
+
+.openBankCard .card-text{
+ font-family: Montserrat-Regular;
+ font-size:15px;
+
+}

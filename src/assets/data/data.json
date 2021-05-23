@@ -1,0 +1,27 @@
+[
+  {
+    "productName": "Quick cash disbursement",
+    "productDescription": "Get terms loans that your business needs within 72 hrs",
+    "productImage": "../assets/image/Get_paid_Instantly.png"
+  },
+  {
+    "productName": "Low-interest rate",
+    "productDescription": "Achieve your financial goals with an amazing interest rate starting at 13% per annum",
+    "productImage": "../assets/image/Low_interest_rate.png"
+  },
+  {
+    "productName": "Zero Paperwork",
+    "productDescription": "Get started instantly by submitting only your basic details & bank statements",
+    "productImage": "../assets/image/Secure_payments.png"
+  },
+  {
+    "productName": "Ace your business finances",
+    "productDescription": "Manage banking, accounting & everything in between, on one platform",
+    "productImage": "../assets/image/freelancer_feature_icon_6@1.5x.png"
+  },
+  {
+    "productName": "Loans to fight COVID-19",
+    "productDescription": "Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh",
+    "productImage": "../assets/image/Covid.png"
+  }
+]

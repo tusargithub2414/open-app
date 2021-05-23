@@ -1,0 +1,26 @@
+<div class="about-section mt-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-8">
+        <div class="row">
+          <div class="col-6 align-self-center" *ngFor="let product of products">
+            <div class="card openBankCard mb-4">
+                <div class="card-body">
+                <img src="{{product.productImage}}" width="90">
+                <h5 class="card-title">{{product.productName}}</h5>
+                <p class="card-text">{{product.productDescription}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-4 align-self-center">
+        <h3>Boost your business with Open</h3>
+        <div class="content-border"></div>
+        <p>Get your hands on a term loan that’s crafted for your business</p>
+  <button class="main-btn main-btn-2 mt-4"> Get an Open Account</button>
+      </div>
+    </div>
+  </div>
+    </div>
